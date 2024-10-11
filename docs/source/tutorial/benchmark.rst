@@ -33,7 +33,9 @@ Datasets
 ----------
 
 You will also have to download the necessary datasets used in our paper. All the accession methods and
-their availablility is in the XXX section of our paper!
+their availablility is in the
+`Availability of data and materials <https://genomebiology.biomedcentral.com/articles/10.1186/s13059-023-03099-1#availability-of-data-and-materials>`_
+section of our paper!
 
 
 --------------------------

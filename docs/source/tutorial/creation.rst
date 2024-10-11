@@ -83,7 +83,7 @@ Cell Types and Expressions
 -----------------------------
 
 With the Creation Mode, we have the assumption that cell types are identified via gating in real life. For example, we use CD4 and CD8
-as markers to identify T cells. For a given cell type, we can thus some channels to be highly expressed whereas other channels to be
+as markers to identify T cells. For a given cell type, we can thus expect some channels to be highly expressed whereas other channels to be
 not as highly expressed. This framework serves as the foundation of Cytomulate's Creation Mode. Internally, we use a matrix to encode
 the expression pattern for each cell type, where as levels of expression for each channel is encoded. You can tune these parameters
 to make sure that diverse pattrns can be generated.
