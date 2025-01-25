@@ -96,6 +96,7 @@ class EmulationCytofData(GeneralCytofData):
 
             ind = np.where(labels == c_type)[0]
             D = expression_matrix[ind, :]
+            print("this is ind ", ind)
 
             self.cell_types[c_type].fit(data=D,
                                         max_components=max_components,
