@@ -64,7 +64,7 @@ class EmulationCellType(GeneralCellType):
             self.zero_probabilities[m] = np.mean(data[:, m] < 0.0001)
         
         # We use BIC (the smaller the better) to perform model selection
-        smallest_bic = np.Inf
+        smallest_bic = np.inf
         current_bic = 0
         best_gm = None
         for n_components in range(min_components, max_components + 1):
