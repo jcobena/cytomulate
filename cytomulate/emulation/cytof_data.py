@@ -96,7 +96,12 @@ class EmulationCytofData(GeneralCytofData):
 
             ind = np.where(labels == c_type)[0]
 
-            ind[-1] = ind[-1] - 1
+            #if ind[-1] >= expression_matrix.shape[0]:
+                #ind[-1] = ind[-1] - 1
+
+            ind = ind - 1 #correct indexes
+
+            print(ind)
             
             D = expression_matrix[ind, :]
             
