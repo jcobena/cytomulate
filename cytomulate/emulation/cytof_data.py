@@ -99,9 +99,9 @@ class EmulationCytofData(GeneralCytofData):
             #if ind[-1] >= expression_matrix.shape[0]:
                 #ind[-1] = ind[-1] - 1
 
-            ind = ind - 1 #correct indexes
+            #ind = ind - 1 #correct indexes
 
-            print(ind)
+            #print(ind)
             
             D = expression_matrix[ind, :]
             
