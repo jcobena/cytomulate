@@ -96,8 +96,7 @@ class EmulationCytofData(GeneralCytofData):
 
             ind = np.where(labels == c_type)[0]
 
-            if ind >= expression_matrix.shape[1]: # just a temporary patch
-                ind = ind -1
+            ind[-1] = ind[-1] - 1
             
             D = expression_matrix[ind, :]
             
