@@ -95,9 +95,12 @@ class EmulationCytofData(GeneralCytofData):
             self.cell_types[c_type] = EmulationCellType(label=c_type, cell_id=cell_id, n_markers=self.n_markers)
 
             ind = np.where(labels == c_type)[0]
-            D = expression_matrix[ind-1, :]
-            print("this is ind ", ind)
 
+            if ind >= expression_matrix.shape[1]: # just a temporary patch
+                ind = ind -1
+            
+            D = expression_matrix[ind, :]
+            
             self.cell_types[c_type].fit(data=D,
                                         max_components=max_components,
                                         min_components=min_components,
